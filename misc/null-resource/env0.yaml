@@ -5,4 +5,4 @@ deploy:
     terraformPlan:
       after:
         - name: Fail After Plan
-          run: echo "Failing deployment" 1>&2 && exit 1
+          run: echo "OK deployment"
