@@ -1,0 +1,8 @@
+version: 2
+
+deploy:
+  steps:
+    terraformPlan:
+      after:
+        - name: Fail After Plan
+          run: echo "Failing deployment" 1>&2 && exit 1
